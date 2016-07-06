@@ -6,9 +6,9 @@ import Communications from 'react-native-communications';
 
 // Styles & Fonts
 import Icon from 'react-native-vector-icons/Ionicons';
-import styles from './styles.js';     
+import styles from './styles.js';
 
-// Components 
+// Components
 
 
 let deviceWidth = ( Dimensions.get('window').width / 2 )
@@ -17,35 +17,35 @@ let deviceHeight = ( Dimensions.get('window').height / 2 )
 
 
 class DataSquare extends Component {
-  navigate() { 
+  navigate() {
     var context = this;
-    context.props.navigator.push({ name: 'Story' }); 
+    context.props.navigator.push({ name: 'Story' });
   }
   render(){
       // For Alternating Color Blocks
       let background;
       if (this.props.index%4 === 0) {
-        background = StyleSheet.create({ 
+        background = StyleSheet.create({
           color: {backgroundColor: '#1fbba6' }})
       } else if ((this.props.index-1)%4 === 0) {
-        background = StyleSheet.create({ 
+        background = StyleSheet.create({
           color: {backgroundColor: '#af6d7e' }})
       } else if ((this.props.index-2)%4 === 0) {
-        background = StyleSheet.create({ 
+        background = StyleSheet.create({
           color: {backgroundColor: '#ccc600' }})
       } else {
-        background = StyleSheet.create({ 
+        background = StyleSheet.create({
           color: {backgroundColor: '#00afd1' }})
       }
 
     return(
 
        <View style={[styles.dataSquare, {height: deviceWidth, width: deviceWidth}, background.color ]}>
-        
+
         {/* Top Component */}
         <View style={styles.dataSquareTop}>
           <Text style={styles.dataSquareTopText}>
-            <Icon name="md-trending-up" size={14} color="#fff"></Icon> 
+            <Icon name="md-trending-up" size={14} color="#fff"></Icon>
             {'  '}
             {Math.floor(this.props.data.rank)}
           </Text>
@@ -53,9 +53,8 @@ class DataSquare extends Component {
 
         {/* Center Component */}
         <View style={styles.dataSquareCenter}>
-
-            <Text style={styles.dataSquareCenterText} 
-              numberOfLines={2}>
+            <Text style={styles.dataSquareCenterText}
+                numberOfLines={3}>
               {this.props.data.trend_name.toLowerCase()}
             </Text>
 
@@ -72,7 +71,7 @@ class DataSquare extends Component {
 
       </View>
     );
-  }    
+  }
 }
 
 export default DataSquare;
