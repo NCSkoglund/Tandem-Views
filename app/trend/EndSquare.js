@@ -4,7 +4,7 @@ import { View, ScrollView, Text, ListView, TouchableHighlight, Dimensions } from
 import { connect } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/Ionicons';
-import styles from './styles.js';       
+import styles from './styles.js';
 
 let deviceWidth = ( Dimensions.get('window').width / 2 )
 let deviceHeight = ( Dimensions.get('window').height / 2 )
@@ -26,7 +26,7 @@ const EndSquare = (props) => {
           <Icon name="ios-happy-outline" size={54} color="#fff"></Icon>
         </Text>
       </View>
-      
+
       {/* Bottom Component */}
       <View style={styles.endSquareBottom}>
         <Text style={styles.endSquareBottomText}>

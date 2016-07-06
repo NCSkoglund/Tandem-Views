@@ -26,7 +26,7 @@ let styles = StyleSheet.create({
     padding: 10
   },
   publicationText: {
-    fontFamily: 'Silom',
+    fontFamily: 'AvenirNext-DemiBold',
     fontSize: 15,
     color: '#fff'
   },
@@ -53,9 +53,15 @@ let styles = StyleSheet.create({
   headlineText: {
     flex: 1,
     flexWrap: 'wrap',
-    fontFamily: 'Oswald',
-    color: '#5d5d5d',
-    fontSize: 20
+    fontFamily: 'Georgia-BoldItalic',
+    color: '#777777',
+    textShadowColor: '#c8d2db',
+    textShadowRadius: 0.5,
+    textShadowOffset: {
+      height: 1,
+      width: 1
+    },
+    fontSize: 18
   },
   dashCard: {
     flex: 1,
