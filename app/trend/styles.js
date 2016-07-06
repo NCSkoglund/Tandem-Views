@@ -6,16 +6,16 @@ let styles = StyleSheet.create({
     flex: 1,
   },
   moss: {
-    backgroundColor: '#1fbba6', 
+    backgroundColor: '#1fbba6',
   },
-  maroon: { 
-    backgroundColor: '#af6d7e',  
+  maroon: {
+    backgroundColor: '#af6d7e',
   },
   mustard: {
-    backgroundColor: '#ccc600', 
+    backgroundColor: '#ccc600',
   },
   skyblue: {
-    backgroundColor: '#00afd1', 
+    backgroundColor: '#00afd1',
   },
   trendRows: {
     backgroundColor: '#f4f4f4',
@@ -32,20 +32,20 @@ let styles = StyleSheet.create({
     marginTop: 10
   },
   dataSquareTopText: {
-    fontSize: 14, 
-    fontFamily: 'Oswald', 
+    fontSize: 16,
+    fontFamily: 'AvenirNext-DemiBold',
     color: '#eaedf1'
   },
   dataSquareCenter: {
-    alignItems: 'center', 
-    justifyContent: 'center', 
-    marginTop: 20, 
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
     marginBottom: 10
   },
   dataSquareCenterText: {
-    fontSize: 30, 
-    fontFamily: 'Oswald', 
-    color: '#eaedf1', 
+    fontSize: 30,
+    fontFamily: 'AvenirNext-DemiBold',
+    color: '#eaedf1',
     textAlign: 'center',
     paddingLeft: 10,
     paddingRight: 10,
@@ -54,7 +54,7 @@ let styles = StyleSheet.create({
     lineHeight: 35
   },
   dataSquareBottom: {
-    alignItems: 'center', 
+    alignItems: 'center',
     padding: 10
   },
   endSquare: {
@@ -65,20 +65,20 @@ let styles = StyleSheet.create({
     alignItems: 'flex-end'
   },
   endSquareCenter: {
-    alignItems: 'center', 
+    alignItems: 'center',
     marginTop: 30
   },
   endSquareCenterText: {
-    fontSize: 25, 
-    fontFamily: 'Oswald', 
+    fontSize: 25,
+    fontFamily: 'AvenirNext-DemiBold',
     color: '#eaedf1'
   },
   endSquareBottom: {
     alignItems: 'center'
-  },  
+  },
   endSquareBottomText: {
-    fontSize: 20, 
-    fontFamily: 'Oswald', 
+    fontSize: 20,
+    fontFamily: 'AvenirNext-DemiBold',
     color: '#eaedf1'
   },
   date: {
